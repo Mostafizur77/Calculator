@@ -9,7 +9,7 @@ FILE *fp;
 void sub(float p, float q)
 {
     fp = fopen("Text.txt", "ab+");
-    result = p - q;
+    result = p -q;
     printf("\n\tResult: %.2f", result);
     fprintf(fp, "Operation: %.2f - %.2f  \tResult:%.2f \t%s  %s\n", p, q, result, __DATE__, __TIME__);
     fclose(fp);
